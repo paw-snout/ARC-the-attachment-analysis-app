@@ -2,6 +2,12 @@
 
 A modern, interactive application designed to help users discover their attachment style through a comprehensive assessment and deep AI-powered analysis of their chat patterns.
 
+## 🌐 Live Demo
+
+**Try it now:** [https://attachment-app-pranjall.vercel.app](https://attachment-app-pranjall.vercel.app)
+
+Take the 5-minute assessment to discover your attachment style!
+
 ## 🌟 Features
 
 ### 1. **Scientific Assessment**
