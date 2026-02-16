@@ -72,4 +72,4 @@ This project is optimized for deployment on [Vercel](https://vercel.com).
 The WhatsApp analysis feature uses a local parser. When you upload a `_chat.txt` file, it is processed entirely within your device's memory using JavaScript. **Your personal messages never leave your device.**
 
 ---
-*Built with ❤️ by [Your Name/Team]*
+Made with ❤️ for your privacy by pranjall :)
