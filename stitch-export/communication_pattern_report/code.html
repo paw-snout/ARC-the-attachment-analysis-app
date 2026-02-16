@@ -1,0 +1,348 @@
+<!DOCTYPE html>
+<html class="light" lang="en"><head>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<title>Communication Pattern Report</title>
+<script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<script id="tailwind-config">
+        tailwind.config = {
+            darkMode: "class",
+            theme: {
+                extend: {
+                    colors: {
+                        "primary": "#6F8F88",
+                        "background-light": "#fdfdfb",
+                        "background-dark": "#192111",
+                        "neutral-surface": "#ffffff",
+                        "neutral-dark-surface": "#1e2617",
+                    },
+                    fontFamily: {
+                        "display": ["Inter", "sans-serif"]
+                    },
+                    borderRadius: {
+                        "DEFAULT": "0.25rem",
+                        "lg": "0.5rem",
+                        "xl": "0.75rem",
+                        "full": "9999px"
+                    },
+                },
+            },
+        }
+    </script>
+<style type="text/tailwindcss">
+        :root {
+            --parrot-green: #6F8F88;
+        }
+        body { font-family: 'Inter', sans-serif; }
+        .donut-segment { transition: stroke-dashoffset 0.35s; transform: rotate(-90deg); transform-origin: 50% 50%; }
+        .hide-scrollbar::-webkit-scrollbar { display: none; }
+        .hide-scrollbar { -ms-overflow-style: none; scrollbar-width: none; }
+    </style>
+<style>
+        body {
+            min-height: 100dvh;
+        }
+    </style>
+<style>
+    body {
+      min-height: max(884px, 100dvh);
+    }
+  </style>
+  </head>
+<body class="bg-background-light dark:bg-background-dark text-slate-900 dark:text-slate-100 font-display min-h-screen">
+<header class="sticky top-0 z-50 bg-background-light/90 dark:bg-background-dark/90 backdrop-blur-md border-b border-primary/20 px-4 py-4">
+<div class="max-w-full mx-auto flex items-center justify-between">
+<div class="flex flex-col">
+<h1 class="text-xl font-bold tracking-tight">Communication Pattern Report</h1>
+<p class="text-xs text-slate-500 dark:text-slate-400 uppercase tracking-widest font-semibold">Standardized Analysis Sync</p>
+</div>
+<div class="flex items-center gap-2 bg-primary/10 border border-primary/30 px-3 py-1.5 rounded-full">
+<span class="material-icons text-primary text-sm">lock</span>
+<span class="text-[10px] font-bold text-primary uppercase tracking-wider">Secure Browser Instance</span>
+</div>
+</div>
+</header>
+<main class="max-w-full mx-auto px-6 py-8 space-y-12 pb-32">
+<section class="space-y-6">
+<div class="grid grid-cols-1 md:grid-cols-2 gap-8">
+<div class="bg-neutral-surface dark:bg-neutral-dark-surface p-8 rounded-xl shadow-sm border border-slate-200/60 dark:border-slate-800/60">
+<h2 class="text-xs font-bold uppercase tracking-widest text-slate-400 mb-8">Interaction Dimensions</h2>
+<div class="space-y-6">
+<div class="space-y-2">
+<div class="flex justify-between text-xs font-bold">
+<span>Abandonment Sensitivity</span>
+<span class="text-primary font-bold">24%</span>
+</div>
+<div class="h-2.5 bg-primary/10 rounded-full overflow-hidden">
+<div class="h-full bg-primary rounded-full" style="width: 24%"></div>
+</div>
+</div>
+<div class="space-y-2">
+<div class="flex justify-between text-xs font-bold">
+<span>Intimacy Seekance</span>
+<span class="text-primary font-bold">82%</span>
+</div>
+<div class="h-2.5 bg-primary/10 rounded-full overflow-hidden">
+<div class="h-full bg-primary rounded-full" style="width: 82%"></div>
+</div>
+</div>
+<div class="space-y-2">
+<div class="flex justify-between text-xs font-bold">
+<span>Conflict Avoidance</span>
+<span class="text-primary font-bold">45%</span>
+</div>
+<div class="h-2.5 bg-primary/10 rounded-full overflow-hidden">
+<div class="h-full bg-primary rounded-full" style="width: 45%"></div>
+</div>
+</div>
+<div class="space-y-2">
+<div class="flex justify-between text-xs font-bold">
+<span>Autonomy Priority</span>
+<span class="text-primary font-bold">76%</span>
+</div>
+<div class="h-2.5 bg-primary/10 rounded-full overflow-hidden">
+<div class="h-full bg-primary rounded-full" style="width: 76%"></div>
+</div>
+</div>
+</div>
+</div>
+<div class="bg-neutral-surface dark:bg-neutral-dark-surface p-8 rounded-xl shadow-sm border border-slate-200/60 dark:border-slate-800/60 flex flex-col items-center justify-center">
+<h2 class="text-xs font-bold uppercase tracking-widest text-slate-400 mb-8 w-full text-left">Attachment Tendencies</h2>
+<div class="flex items-center gap-6 py-4">
+<div class="relative w-32 h-32">
+<svg class="w-full h-full" viewBox="0 0 36 36">
+<circle class="stroke-slate-100 dark:stroke-slate-800" cx="18" cy="18" fill="none" r="16" stroke-width="3"></circle>
+<circle class="stroke-primary" cx="18" cy="18" fill="none" r="16" stroke-dasharray="100" stroke-dashoffset="30" stroke-linecap="round" stroke-width="3"></circle>
+</svg>
+<div class="absolute inset-0 flex flex-col items-center justify-center text-center">
+<span class="text-2xl font-black text-primary">70%</span>
+<span class="text-[9px] font-bold uppercase tracking-tighter">Secure</span>
+</div>
+</div>
+<div class="relative w-24 h-24">
+<svg class="w-full h-full" viewBox="0 0 36 36">
+<circle class="stroke-slate-100 dark:stroke-slate-800" cx="18" cy="18" fill="none" r="16" stroke-width="3"></circle>
+<circle class="stroke-primary" cx="18" cy="18" fill="none" r="16" stroke-dasharray="100" stroke-dashoffset="85" stroke-linecap="round" stroke-width="3"></circle>
+</svg>
+<div class="absolute inset-0 flex flex-col items-center justify-center text-center">
+<span class="text-lg font-bold text-primary">15%</span>
+<span class="text-[8px] font-bold uppercase leading-tight">Anxious</span>
+</div>
+</div>
+<div class="relative w-24 h-24">
+<svg class="w-full h-full" viewBox="0 0 36 36">
+<circle class="stroke-slate-100 dark:stroke-slate-800" cx="18" cy="18" fill="none" r="16" stroke-width="3"></circle>
+<circle class="stroke-primary" cx="18" cy="18" fill="none" r="16" stroke-dasharray="100" stroke-dashoffset="85" stroke-linecap="round" stroke-width="3"></circle>
+</svg>
+<div class="absolute inset-0 flex flex-col items-center justify-center text-center">
+<span class="text-lg font-bold text-primary">15%</span>
+<span class="text-[8px] font-bold uppercase leading-tight">Avoidant</span>
+</div>
+</div>
+</div>
+</div>
+</div>
+</section>
+<section class="grid grid-cols-1 md:grid-cols-3 gap-8">
+<div class="bg-neutral-surface dark:bg-neutral-dark-surface p-6 rounded-xl border border-slate-200/60 dark:border-slate-800/60 shadow-sm">
+<h3 class="text-xs font-bold uppercase text-slate-400 mb-6">Volume Balance</h3>
+<div class="flex items-center justify-center py-4">
+<div class="relative w-36 h-36">
+<svg class="w-full h-full" viewBox="0 0 36 36">
+<circle class="stroke-primary/10" cx="18" cy="18" fill="none" r="15.9" stroke-width="4"></circle>
+<circle class="stroke-primary" cx="18" cy="18" fill="none" r="15.9" stroke-dasharray="60 40" stroke-dashoffset="25" stroke-width="4"></circle>
+</svg>
+<div class="absolute inset-0 flex flex-col items-center justify-center text-center">
+<span class="text-[10px] font-bold uppercase text-slate-400">Personal share</span>
+<span class="text-2xl font-black text-primary">60%</span>
+</div>
+</div>
+</div>
+<p class="text-xs text-center text-slate-500 mt-4 font-medium italic">Engagement distribution profile</p>
+</div>
+<div class="bg-neutral-surface dark:bg-neutral-dark-surface p-6 rounded-xl border border-slate-200/60 dark:border-slate-800/60 shadow-sm">
+<h3 class="text-xs font-bold uppercase text-slate-400 mb-6">Activity Trend</h3>
+<div class="h-40 flex items-end justify-between gap-1.5 px-2">
+<div class="flex-1 bg-primary/20 rounded-t-sm h-12"></div>
+<div class="flex-1 bg-primary/30 rounded-t-sm h-16"></div>
+<div class="flex-1 bg-primary/50 rounded-t-sm h-24"></div>
+<div class="flex-1 bg-primary/70 rounded-t-sm h-20"></div>
+<div class="flex-1 bg-primary/90 rounded-t-sm h-28"></div>
+<div class="flex-1 bg-primary rounded-t-sm h-36"></div>
+<div class="flex-1 bg-primary/80 rounded-t-sm h-24"></div>
+<div class="flex-1 bg-primary/60 rounded-t-sm h-14"></div>
+</div>
+<div class="flex justify-between mt-4 text-[9px] text-slate-400 uppercase font-bold tracking-widest">
+<span>Mon</span>
+<span>Sun</span>
+</div>
+</div>
+<div class="bg-neutral-surface dark:bg-neutral-dark-surface p-6 rounded-xl border border-slate-200/60 dark:border-slate-800/60 shadow-sm">
+<h3 class="text-xs font-bold uppercase text-slate-400 mb-6">Response Latency</h3>
+<div class="space-y-6 py-2">
+<div class="space-y-1.5">
+<div class="flex justify-between text-[10px] font-bold uppercase tracking-tight">
+<span>Primary User</span>
+<span class="text-primary">12m avg</span>
+</div>
+<div class="h-3 bg-primary/10 rounded-full">
+<div class="w-[40%] h-full bg-primary rounded-full"></div>
+</div>
+</div>
+<div class="space-y-1.5">
+<div class="flex justify-between text-[10px] font-bold uppercase tracking-tight">
+<span>Secondary User</span>
+<span class="text-slate-400">48m avg</span>
+</div>
+<div class="h-3 bg-slate-100 dark:bg-slate-800 rounded-full">
+<div class="w-[85%] h-full bg-primary/40 rounded-full"></div>
+</div>
+</div>
+</div>
+<p class="text-[10px] text-center text-slate-500 mt-8 italic">Daytime interaction cycles</p>
+</div>
+</section>
+<section class="space-y-8">
+<h2 class="text-2xl font-bold border-b border-primary/20 pb-4">Core Analysis Insights</h2>
+<div class="grid grid-cols-1 md:grid-cols-2 gap-6">
+<div class="flex gap-6 p-6 bg-white dark:bg-slate-900 border border-slate-200 dark:border-slate-800 rounded-xl shadow-sm">
+<div class="flex-shrink-0 w-12 h-12 bg-primary/10 rounded-xl flex items-center justify-center">
+<span class="material-icons text-primary">chat_bubble_outline</span>
+</div>
+<div>
+<h4 class="text-base font-bold text-slate-800 dark:text-slate-100">Proactive Engagement</h4>
+<p class="text-sm text-slate-600 dark:text-slate-400 mt-2 leading-relaxed">Initiation rate detected at 64%, indicating strong relationship management and high emotional investment.</p>
+</div>
+</div>
+<div class="flex gap-6 p-6 bg-white dark:bg-slate-900 border border-slate-200 dark:border-slate-800 rounded-xl shadow-sm">
+<div class="flex-shrink-0 w-12 h-12 bg-primary/10 rounded-xl flex items-center justify-center">
+<span class="material-icons text-primary">sync_alt</span>
+</div>
+<div>
+<h4 class="text-base font-bold text-slate-800 dark:text-slate-100">Mirroring Sync</h4>
+<p class="text-sm text-slate-600 dark:text-slate-400 mt-2 leading-relaxed">High linguistic mirroring identified, correlating with established subconscious empathy and mutual communication harmony.</p>
+</div>
+</div>
+</div>
+</section>
+<section class="bg-primary/5 p-10 rounded-2xl border border-primary/30 relative overflow-hidden">
+<div class="absolute top-0 right-0 p-8 opacity-10 pointer-events-none">
+<span class="material-icons text-[120px] text-primary">psychology</span>
+</div>
+<h2 class="text-2xl font-black text-primary mb-6">Personal Reflection</h2>
+<div class="space-y-6 text-slate-700 dark:text-slate-200 text-base leading-relaxed italic max-w-3xl">
+<p>The analysis of your message density and sentiment variance indicates a communication style that is fundamentally **secure with high autonomy**. You maintain a consistent interaction cadence without a frequent need for external validation, which supports long-term relational stability.</p>
+<p>Data shows you maintain clear boundaries between 10 PM and 7 AM, a pattern that fosters work-life-relational health without sacrificing depth. However, consider the subtle latency gap on weekends; while it may represent personal recharge time, ensure your partner understands this shift is about self-care rather than withdrawal.</p>
+</div>
+</section>
+<section class="space-y-8">
+<div class="flex items-center justify-between border-b border-primary/20 pb-4">
+<h2 class="text-2xl font-bold">Educational Recommendations</h2>
+<p class="text-xs font-bold text-primary uppercase tracking-widest">Expert Curated Resources</p>
+</div>
+<div class="grid grid-cols-1 md:grid-cols-2 gap-8">
+<a class="flex flex-col lg:flex-row bg-white dark:bg-neutral-dark-surface border border-slate-200 dark:border-slate-800 rounded-2xl overflow-hidden hover:border-primary transition-all group shadow-sm" href="https://www.amazon.com/Attached-Science-Adult-Attachment-Help/dp/1585429139" target="_blank">
+<div class="lg:w-48 h-64 lg:h-auto bg-slate-100 dark:bg-slate-800 flex items-center justify-center relative overflow-hidden border-r border-slate-100 dark:border-slate-800">
+<img alt="Attached book cover" class="w-full h-full object-cover group-hover:scale-105 transition-transform" src="https://lh3.googleusercontent.com/aida-public/AB6AXuAV-S1ih7D-BeSrPHSFwFuJwb15mLIuKjszWbRdAp1AtFADvTAlDwWT-OvIHkihrY-tIxXbff2lelR19VOsFt0Bpth6ENTUr9iVd8jE9STwi2hnl4LDddJwJ26ClwDaUkYMn2zGdL0kbsQCN-iDDKT5T1VOeALNRz5XKr-X8xR4FtBz8LoBJ0JqvAchNcn1yoC4aBX_RNOib23gx6NunavQhqz2VbrjXpkp18Q836vxvIRt4eGp472nMP7j9XSkrAifMbxzoWEzs_Y"/>
+<div class="absolute inset-0 bg-primary/5 group-hover:bg-primary/0 transition-colors"></div>
+</div>
+<div class="flex-1 p-8 flex flex-col justify-center">
+<div class="flex items-center gap-2 text-primary mb-3">
+<span class="material-symbols-outlined text-[20px]">menu_book</span>
+<span class="text-[11px] font-black uppercase tracking-[0.2em]">Recommended Reading</span>
+</div>
+<h3 class="text-xl font-bold text-slate-800 dark:text-slate-100 mb-2">Attached: The Science of Adult Attachment</h3>
+<p class="text-sm text-slate-500 dark:text-slate-400 mb-6 leading-relaxed">By Amir Levine &amp; Rachel Heller. A seminal guide to understanding attachment science in modern adult relationships.</p>
+<span class="text-sm font-bold text-primary inline-flex items-center gap-2 group-hover:gap-3 transition-all">
+                            Purchase on Amazon <span class="material-icons text-sm">arrow_forward</span>
+</span>
+</div>
+</a>
+<a class="flex flex-col bg-white dark:bg-neutral-dark-surface border border-slate-200 dark:border-slate-800 rounded-2xl overflow-hidden hover:border-primary transition-all group shadow-sm" href="https://www.youtube.com/watch?v=UcmLQtNdD3c" target="_blank">
+<div class="relative aspect-video bg-slate-900">
+<img alt="Video thumbnail" class="w-full h-full object-cover opacity-80 group-hover:opacity-100 transition-opacity" src="https://lh3.googleusercontent.com/aida-public/AB6AXuCz4SJJcWdHR2YiEgTV5oKOyobFMq-j_INBBBvWLz6rQYy1PjyizZ5fA-hmdl33fUhFfugG7D_bVgoA4VTxXCJpL3ley6muZMecvjKi-VQ7Vi8RAPmjL_t3zq9ds6Dw3wTMyEUlwvHenrbK78v9p4_PpFDmi0y6K68Gu5cReXEY16sBhv9z-crj-PL_XGK6DTy5Lnqq8b0zmo6rwHtW7XbJboltpMEXpF0nbzccc5ExAkuBgGxuC2vyFIo0mgRWwh1dKCWv8Gv6fRw"/>
+<div class="absolute inset-0 flex items-center justify-center">
+<div class="w-16 h-16 bg-primary/90 text-white rounded-full flex items-center justify-center shadow-xl group-hover:scale-110 transition-transform">
+<span class="material-icons text-4xl ml-1">play_arrow</span>
+</div>
+</div>
+<div class="absolute top-4 left-4 bg-primary px-2 py-1 rounded text-[10px] font-black text-white uppercase tracking-widest">Video Workshop</div>
+<div class="absolute bottom-4 right-4 bg-black/70 text-white text-[10px] px-2 py-1 rounded font-bold backdrop-blur-sm">12:45</div>
+</div>
+<div class="p-8">
+<h3 class="text-lg font-bold text-slate-800 dark:text-slate-100 group-hover:text-primary transition-colors">Recognizing Anxious-Avoidant Traps in Modern Dating</h3>
+<p class="text-xs font-semibold text-slate-400 mt-2 uppercase tracking-widest">Reflective Psychology • Interactive Masterclass</p>
+</div>
+</a>
+</div>
+<div class="space-y-6 pt-8">
+<div class="flex items-center gap-3">
+<span class="material-symbols-outlined text-primary text-3xl">article</span>
+<h3 class="text-base font-black uppercase tracking-[0.15em] text-slate-400">Essential Articles</h3>
+</div>
+<div class="grid grid-cols-1 md:grid-cols-3 gap-4">
+<a class="flex items-center justify-between p-6 bg-white dark:bg-neutral-dark-surface border border-slate-200 dark:border-slate-800 rounded-xl group hover:border-primary hover:shadow-md transition-all" href="https://www.psychologytoday.com" target="_blank">
+<div class="flex flex-col">
+<span class="text-[10px] font-black text-primary uppercase tracking-widest mb-1">Psychology Today</span>
+<h4 class="text-sm font-bold text-slate-800 dark:text-slate-200 group-hover:text-primary transition-colors">The 4 Habits That Can Kill a Relationship</h4>
+</div>
+<span class="material-icons text-primary opacity-40 group-hover:opacity-100 group-hover:translate-x-1 transition-all">open_in_new</span>
+</a>
+<a class="flex items-center justify-between p-6 bg-white dark:bg-neutral-dark-surface border border-slate-200 dark:border-slate-800 rounded-xl group hover:border-primary hover:shadow-md transition-all" href="https://www.gottman.com" target="_blank">
+<div class="flex flex-col">
+<span class="text-[10px] font-black text-primary uppercase tracking-widest mb-1">The Gottman Institute</span>
+<h4 class="text-sm font-bold text-slate-800 dark:text-slate-200 group-hover:text-primary transition-colors">Softening Your Startup: Difficult Dialogue</h4>
+</div>
+<span class="material-icons text-primary opacity-40 group-hover:opacity-100 group-hover:translate-x-1 transition-all">open_in_new</span>
+</a>
+<a class="flex items-center justify-between p-6 bg-white dark:bg-neutral-dark-surface border border-slate-200 dark:border-slate-800 rounded-xl group hover:border-primary hover:shadow-md transition-all" href="https://www.attachmentproject.com" target="_blank">
+<div class="flex flex-col">
+<span class="text-[10px] font-black text-primary uppercase tracking-widest mb-1">Clinical Perspectives</span>
+<h4 class="text-sm font-bold text-slate-800 dark:text-slate-200 group-hover:text-primary transition-colors">Digital Response Latency &amp; Attachment</h4>
+</div>
+<span class="material-icons text-primary opacity-40 group-hover:opacity-100 group-hover:translate-x-1 transition-all">open_in_new</span>
+</a>
+</div>
+</div>
+</section>
+<footer class="pt-12 border-t border-primary/20">
+<div class="bg-primary/5 dark:bg-slate-900/50 p-6 rounded-xl border border-primary/10">
+<p class="text-[11px] text-slate-500 leading-relaxed text-center font-medium">
+<strong class="text-primary font-black uppercase tracking-widest mr-2">Academic Disclaimer:</strong> This report is generated by an algorithmic heuristic for self-reflection purposes. It is not a clinical assessment. All data processing occurs locally; your personal interactions are never transmitted or stored externally.
+                </p>
+</div>
+<div class="mt-12 pb-12 flex justify-center gap-10">
+<button class="flex items-center gap-2 text-xs font-bold uppercase tracking-widest text-primary hover:opacity-80 transition-opacity">
+<span class="material-icons text-xl">file_download</span>
+                    Export PDF
+                </button>
+<button class="flex items-center gap-2 text-xs font-bold uppercase tracking-widest text-primary hover:opacity-80 transition-opacity">
+<span class="material-icons text-xl">share</span>
+                    Safe Share
+                </button>
+</div>
+</footer>
+</main>
+<nav class="fixed bottom-0 left-0 right-0 bg-white/95 dark:bg-slate-950/95 backdrop-blur-xl border-t border-primary/20 flex justify-around items-center py-4 px-12 md:hidden z-[60]">
+<button class="flex flex-col items-center gap-1 text-slate-400">
+<span class="material-icons text-2xl">home</span>
+<span class="text-[9px] font-bold uppercase tracking-tighter">Home</span>
+</button>
+<button class="flex flex-col items-center gap-1 text-primary">
+<span class="material-icons text-2xl">assessment</span>
+<span class="text-[9px] font-bold uppercase tracking-tighter">Report</span>
+</button>
+<button class="flex flex-col items-center gap-1 text-slate-400">
+<span class="material-icons text-2xl">auto_awesome</span>
+<span class="text-[9px] font-bold uppercase tracking-tighter">Reflect</span>
+</button>
+<button class="flex flex-col items-center gap-1 text-slate-400">
+<span class="material-icons text-2xl">settings</span>
+<span class="text-[9px] font-bold uppercase tracking-tighter">Tools</span>
+</button>
+</nav>
+
+</body></html>

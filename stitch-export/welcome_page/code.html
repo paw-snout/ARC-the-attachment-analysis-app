@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en"><head>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<title>Welcome - Behavioral Analytics</title>
+<script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+<link href="https://fonts.googleapis.com/css2?family=Manrope:wght@200;300;400;500&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<script id="tailwind-config">
+        tailwind.config = {
+            darkMode: "class",
+            theme: {
+                extend: {
+                    colors: {
+                        "off-white": "#fcfaf7",
+                        "sage-green": "#6F8F88",
+                        "parrot-green": "#a2d729",
+                        "sage-muted": "#e1e8e2",
+                    },
+                    fontFamily: {
+                        "display": ["Manrope", "sans-serif"]
+                    }
+                },
+            },
+        }
+    </script>
+<style type="text/tailwindcss">
+        body {
+            -webkit-tap-highlight-color: transparent;
+            background-color: theme('colors.off-white');
+        }
+        .material-symbols-outlined {
+            font-variation-settings: 'FILL' 0, 'wght' 200, 'GRAD' 0, 'opsz' 24;
+        }
+    </style>
+<style>
+        body {
+            min-height: max(884px, 100dvh);
+        }
+    </style>
+<style>
+    body {
+      min-height: max(884px, 100dvh);
+    }
+  </style>
+  </head>
+<body class="font-display text-stone-800 min-h-screen flex flex-col items-center overflow-x-hidden">
+<header class="w-full py-8 px-8 md:px-12 flex justify-between items-center">
+<div class="flex items-center space-x-2 opacity-60">
+<span class="material-symbols-outlined text-2xl">bubble_chart</span>
+<span class="text-sm font-light tracking-[0.2em] uppercase">Insight</span>
+</div>
+<div class="text-sm font-light tracking-wide opacity-50">v1.0</div>
+</header>
+<main class="flex-grow flex flex-col items-center justify-center w-full px-6 md:px-24 text-center">
+<div class="mb-16">
+<div class="w-24 h-24 rounded-full border border-parrot-green/30 flex items-center justify-center relative">
+<div class="w-12 h-12 rounded-full bg-parrot-green/10"></div>
+<div class="absolute inset-0 border border-parrot-green/20 rounded-full scale-125"></div>
+</div>
+</div>
+<section class="max-w-5xl mx-auto space-y-10">
+<h1 class="text-5xl md:text-7xl lg:text-8xl font-light tracking-tight text-stone-900 leading-[1.1]">
+                Quiet reflection on <br class="hidden md:block"/> your relationships.
+            </h1>
+<p class="text-xl md:text-2xl font-light text-stone-500 leading-relaxed max-w-2xl mx-auto">
+                A private space to understand your attachment patterns through simple, consistent observation.
+            </p>
+</section>
+<section class="mt-20 w-full flex justify-center">
+<button class="group relative px-16 py-6 bg-parrot-green text-stone-900 rounded-full text-xl font-medium tracking-wide transition-all duration-500 hover:bg-stone-800 hover:text-white hover:px-20 active:scale-95 shadow-xl shadow-parrot-green/20">
+                Get Started
+            </button>
+</section>
+</main>
+<footer class="w-full py-12 px-8 md:px-12 flex flex-col md:flex-row justify-between items-center border-t border-stone-200/50 mt-12 bg-white/30">
+<div class="flex items-center space-x-3 text-stone-400 mb-6 md:mb-0">
+<span class="material-symbols-outlined text-lg">verified_user</span>
+<span class="text-sm font-light tracking-widest uppercase">Privacy-first Experience</span>
+</div>
+<div class="text-center md:text-right">
+<p class="text-sm text-stone-400 font-light">
+                No data leaves your browser. <span class="mx-2 opacity-30">|</span> Local-only encryption enabled.
+            </p>
+</div>
+</footer>
+<div class="fixed inset-0 pointer-events-none opacity-[0.03] z-50" style="background-image: url('https://lh3.googleusercontent.com/aida-public/AB6AXuAaeBcDUaILtNXw3VyX0JH7fDxl4l2yIHRuAVIrhnCGz5zIvNyGyTgJr45qByBO6o0hhDWwSG3oXyXoq3XtvlqpTRJcOpsIokY_vRCdR3V0xwZoWrIxyVotXZuypJXRT3scLV0JkSHtxeN3r5dRVPqB4DmPD_NtnTSOAVl3IOJCtGBJi9oOTLLGfzchEzmVxolBBKSQYAe0jVrc4TtMFJAH7HzTWS-Jx1WxusLsg7I05vLRFt0zWeSOxKgQrIqHhIHCocOKjiy4xRM');"></div>
+
+</body></html>

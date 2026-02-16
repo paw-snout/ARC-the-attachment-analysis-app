@@ -1,0 +1,203 @@
+<!DOCTYPE html>
+<html class="light" lang="en"><head>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<title>Final Results Dashboard</title>
+<script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<script id="tailwind-config">
+        tailwind.config = {
+            darkMode: "class",
+            theme: {
+                extend: {
+                    colors: {
+                        "primary": "#6F8F88",
+                        "sage": "#6F8F88",
+                        "background-light": "#f8fafc",
+                        "background-dark": "#0f172a",
+                        "charcoal": "#334139",
+                        "secure": "#6F8F88",
+                        "anxious": "#D1C7A7",
+                        "avoidant": "#E5B181",
+                    },
+                    fontFamily: {
+                        "display": ["Inter", "sans-serif"]
+                    },
+                },
+            },
+        }
+    </script>
+<style type="text/tailwindcss">
+        @layer base {
+            body {
+                @apply bg-background-light dark:bg-background-dark font-display text-slate-800 dark:text-slate-100 min-h-screen;
+            }
+        }
+        .progress-ring__circle {
+            transition: stroke-dashoffset 0.35s;
+            transform: rotate(-90deg);
+            transform-origin: 50% 50%;
+        }
+    </style>
+<style>
+    body {
+      min-height: max(884px, 100dvh);
+    }
+  </style>
+  </head>
+<body class="flex flex-col">
+<header class="w-full border-b border-slate-200 dark:border-slate-800 bg-white/80 dark:bg-slate-900/80 backdrop-blur-md sticky top-0 z-50">
+<div class="w-full px-6 py-4 flex items-center justify-between">
+<div class="flex items-center gap-4">
+<button class="p-2 text-slate-500 hover:text-sage transition-colors">
+<span class="material-icons">arrow_back</span>
+</button>
+<h1 class="text-lg font-semibold tracking-tight">Final Results Dashboard</h1>
+</div>
+<div class="flex items-center gap-3">
+<span class="text-xs font-medium px-3 py-1 bg-sage/10 text-sage rounded-full">Analysis Complete</span>
+<button class="p-2 text-slate-500 hover:text-sage transition-colors">
+<span class="material-icons">share</span>
+</button>
+</div>
+</div>
+</header>
+<main class="flex-1 w-full flex flex-col lg:flex-row min-h-[calc(100vh-69px)]">
+<section class="flex-1 p-6 md:p-12 lg:border-r border-slate-200 dark:border-slate-800 overflow-y-auto">
+<div class="max-w-4xl mx-auto space-y-12">
+<div>
+<h2 class="text-3xl font-bold text-slate-900 dark:text-white mb-2">Your Attachment Profile</h2>
+<p class="text-slate-500 dark:text-slate-400">Detailed breakdown based on behavioral patterns and communication markers.</p>
+</div>
+<div class="grid grid-cols-1 md:grid-cols-3 gap-8">
+<div class="flex flex-col items-center text-center p-6 rounded-2xl bg-white dark:bg-slate-900 shadow-sm border border-slate-100 dark:border-slate-800">
+<div class="relative w-32 h-32 mb-4">
+<svg class="w-full h-full">
+<circle class="text-slate-100 dark:text-slate-800" cx="64" cy="64" fill="transparent" r="56" stroke="currentColor" stroke-width="8"></circle>
+<circle class="text-secure progress-ring__circle" cx="64" cy="64" fill="transparent" r="56" stroke="currentColor" stroke-dasharray="351.85" stroke-dashoffset="105.5" stroke-linecap="round" stroke-width="8"></circle>
+</svg>
+<div class="absolute inset-0 flex items-center justify-center">
+<span class="text-2xl font-bold">70%</span>
+</div>
+</div>
+<h3 class="font-semibold text-slate-800 dark:text-slate-200">Secure</h3>
+<p class="text-xs text-slate-500 mt-1 uppercase tracking-widest">Primary Style</p>
+</div>
+<div class="flex flex-col items-center text-center p-6 rounded-2xl bg-white dark:bg-slate-900 shadow-sm border border-slate-100 dark:border-slate-800">
+<div class="relative w-32 h-32 mb-4">
+<svg class="w-full h-full">
+<circle class="text-slate-100 dark:text-slate-800" cx="64" cy="64" fill="transparent" r="56" stroke="currentColor" stroke-width="8"></circle>
+<circle class="text-anxious progress-ring__circle" cx="64" cy="64" fill="transparent" r="56" stroke="currentColor" stroke-dasharray="351.85" stroke-dashoffset="281.4" stroke-linecap="round" stroke-width="8"></circle>
+</svg>
+<div class="absolute inset-0 flex items-center justify-center">
+<span class="text-2xl font-bold">20%</span>
+</div>
+</div>
+<h3 class="font-semibold text-slate-800 dark:text-slate-200">Anxious</h3>
+<p class="text-xs text-slate-500 mt-1 uppercase tracking-widest">Secondary</p>
+</div>
+<div class="flex flex-col items-center text-center p-6 rounded-2xl bg-white dark:bg-slate-900 shadow-sm border border-slate-100 dark:border-slate-800">
+<div class="relative w-32 h-32 mb-4">
+<svg class="w-full h-full">
+<circle class="text-slate-100 dark:text-slate-800" cx="64" cy="64" fill="transparent" r="56" stroke="currentColor" stroke-width="8"></circle>
+<circle class="text-avoidant progress-ring__circle" cx="64" cy="64" fill="transparent" r="56" stroke="currentColor" stroke-dasharray="351.85" stroke-dashoffset="316.6" stroke-linecap="round" stroke-width="8"></circle>
+</svg>
+<div class="absolute inset-0 flex items-center justify-center">
+<span class="text-2xl font-bold">10%</span>
+</div>
+</div>
+<h3 class="font-semibold text-slate-800 dark:text-slate-200">Avoidant</h3>
+<p class="text-xs text-slate-500 mt-1 uppercase tracking-widest">Tertiary</p>
+</div>
+</div>
+<div class="bg-slate-50 dark:bg-slate-900/50 rounded-2xl p-8 border border-slate-100 dark:border-slate-800">
+<div class="flex items-center gap-3 mb-6">
+<span class="material-symbols-outlined text-sage">insights</span>
+<h3 class="text-sm font-bold uppercase tracking-[0.2em] text-slate-400">Insight Summary</h3>
+</div>
+<p class="text-lg text-slate-700 dark:text-slate-300 leading-relaxed font-light italic">
+                    "Your profile indicates a predominantly secure attachment style, characterized by a balanced approach to intimacy and independence. In digital communication, you maintain consistent response intervals and high mirroring scores, suggesting strong emotional resonance. While there are minor anxious markers during peak-stress periods, your overall pattern demonstrates a robust capacity for maintaining healthy boundaries without sacrificing connection."
+                </p>
+<div class="mt-8 grid grid-cols-2 gap-6 pt-8 border-t border-slate-200 dark:border-slate-800">
+<div>
+<span class="block text-[10px] uppercase tracking-widest text-slate-400 mb-1">Mirroring Score</span>
+<span class="text-xl font-medium text-slate-900 dark:text-white">88/100</span>
+</div>
+<div>
+<span class="block text-[10px] uppercase tracking-widest text-slate-400 mb-1">Consistency</span>
+<span class="text-xl font-medium text-slate-900 dark:text-white">High</span>
+</div>
+</div>
+</div>
+</div>
+</section>
+<section class="lg:w-[450px] bg-white dark:bg-slate-900/40 p-6 md:p-12 overflow-y-auto">
+<div class="max-w-md mx-auto h-full flex flex-col">
+<div class="mb-10">
+<div class="w-12 h-12 rounded-xl bg-sage/10 flex items-center justify-center text-sage mb-6">
+<span class="material-symbols-outlined text-3xl">psychology_alt</span>
+</div>
+<h2 class="text-2xl font-bold text-slate-900 dark:text-white mb-3">Deeper Analysis</h2>
+<p class="text-slate-500 text-sm leading-relaxed">
+                    Upload your chat history for a granular breakdown of sentiment, response latency, and word frequency mapping.
+                </p>
+</div>
+<div class="flex-1">
+<div class="group relative border-2 border-dashed border-slate-200 dark:border-slate-700 rounded-3xl p-10 text-center bg-slate-50/50 dark:bg-slate-800/20 hover:border-sage transition-all duration-300">
+<div class="mb-6 inline-flex w-16 h-16 rounded-full bg-white dark:bg-slate-800 shadow-sm items-center justify-center">
+<span class="material-icons text-3xl text-slate-300 dark:text-slate-600 group-hover:text-sage transition-colors">description</span>
+</div>
+<h3 class="text-base font-semibold text-slate-800 dark:text-slate-200 mb-2">Upload Chat Export</h3>
+<p class="text-xs text-slate-400 mb-8">Format: .txt (Plain Text)</p>
+<button class="w-full bg-sage text-white hover:bg-[#5d7a74] py-4 rounded-xl text-sm font-semibold transition-all shadow-lg active:scale-95 flex items-center justify-center gap-2 mb-8">
+<span class="material-icons text-lg">add_circle_outline</span>
+                        Select Chat File
+                    </button>
+<div class="bg-emerald-50 dark:bg-emerald-500/10 p-4 rounded-2xl border border-emerald-100 dark:border-emerald-500/20">
+<div class="flex items-start gap-3 text-left">
+<span class="material-symbols-outlined text-emerald-500 text-lg">verified_user</span>
+<div>
+<p class="text-[12px] font-semibold text-emerald-700 dark:text-emerald-400 mb-1">Processed locally</p>
+<p class="text-[11px] text-emerald-600/80 dark:text-emerald-400/60 leading-normal">
+                                    Your privacy is guaranteed. Chat analysis happens entirely in your browser. Files are never uploaded, stored, or visible to our servers.
+                                </p>
+</div>
+</div>
+</div>
+</div>
+<div class="mt-10 space-y-4">
+<p class="text-[10px] font-bold uppercase tracking-[0.2em] text-slate-400 mb-4">Deep Analysis includes</p>
+<div class="grid grid-cols-2 gap-y-4">
+<div class="flex items-center gap-2 text-xs text-slate-500">
+<span class="material-icons text-[14px] text-sage">check_circle</span>
+                            Sentiment Flow
+                        </div>
+<div class="flex items-center gap-2 text-xs text-slate-500">
+<span class="material-icons text-[14px] text-sage">check_circle</span>
+                            Response Latency
+                        </div>
+<div class="flex items-center gap-2 text-xs text-slate-500">
+<span class="material-icons text-[14px] text-sage">check_circle</span>
+                            Power Dynamics
+                        </div>
+<div class="flex items-center gap-2 text-xs text-slate-500">
+<span class="material-icons text-[14px] text-sage">check_circle</span>
+                            Vocabulary Sync
+                        </div>
+</div>
+</div>
+</div>
+<div class="mt-12 pt-6 border-t border-slate-200 dark:border-slate-800 text-center">
+<a class="text-xs text-sage hover:underline font-medium inline-flex items-center gap-1" href="#">
+                    How to export your chat? <span class="material-icons text-[14px]">open_in_new</span>
+</a>
+</div>
+</div>
+</section>
+</main>
+<div class="fixed top-0 right-0 -z-10 w-[500px] h-[500px] bg-sage/5 rounded-full blur-[120px] -mr-64 -mt-64"></div>
+<div class="fixed bottom-0 left-0 -z-10 w-[600px] h-[600px] bg-sage/5 rounded-full blur-[120px] -ml-80 -mb-80"></div>
+
+</body></html>
